@@ -1,4 +1,4 @@
-pragma solidity ^0.4.2;
+pragma solidity >=0.5.16;
 
 contract Election {
     // Store candidate
@@ -6,7 +6,7 @@ contract Election {
     string public candidate;
 
     // Constructor
-    function Election () public {
+    constructor() public {
         candidate = "Candidate 1";
     }
 }
